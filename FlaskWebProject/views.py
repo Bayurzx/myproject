@@ -62,9 +62,7 @@ def post(id):
 def login():
     log = ""
     if current_user.is_authenticated:
-        # NOTE: logging successful login attempts!
-        log = "info"
-        app.logger.info('logging info issue: Login was successful!')
+
         return redirect(url_for('home'))
     form = LoginForm()
     if form.validate_on_submit():
@@ -82,7 +80,6 @@ def login():
         # NOTE: logging successful login attempts!
         log = "info"
         app.logger.info('logging info issue: Login was successful!')
-        print("sucesss5")
         return redirect(next_page)
     session["state"] = str(uuid.uuid4())
     auth_url = _build_auth_url(scopes=Config.SCOPE, state=session["state"])
