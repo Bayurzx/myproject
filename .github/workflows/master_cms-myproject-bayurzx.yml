@@ -26,13 +26,6 @@ jobs:
         platform: python
         platform-version: '3.8'
 
-    - name: Add My Secrets
-        with:
-          CLIENT_ID: ${{ secrets.CLIENT_ID }}
-          BLOB_STORAGE_KEY: ${{ secrets.BLOB_STORAGE_KEY }}
-          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-          SQL_PASSWORD: ${{ secrets.SQL_PASSWORD }}
-
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
       with:
