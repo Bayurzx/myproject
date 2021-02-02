@@ -2,11 +2,12 @@
 
 ### Analyze, choose, and justify the appropriate resource option for deploying the app.
 
-*For **both** a VM or App Service solution for the CMS app:*
-- *Analyze costs, scalability, availability, and workflow*
-- *Choose the appropriate solution (VM or App Service) for deploying the app*
-- *Justify your choice*
+## I chose App Services on Azure because,
+- App Service is less likely to fail and has more availability (availability zones)
+- App Service is easier to manage and faster to deploy
+- App service has more support for legacy apps
+- App Service is easier to scale in the long run in operations, cost, etc.
 
-### Assess app changes that would change your decision.
+live-link:
 
-*Detail how the app and any other needs would have to change for you to change your decision in the last section.* 
+http://cms-myproject-bayurzx.azurewebsites.net/
