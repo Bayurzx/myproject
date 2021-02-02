@@ -27,15 +27,6 @@ jobs:
         platform-version: '3.8'
 
     - name: Add My Secrets
-        # run: |
-        #   if [ "$SQL_PASSWORD" == "candy" ]
-        #   then
-        #     echo "Got the secret, and that's not it"
-        #   fi
-        #   if [ "$SQL_PASSWORD" == "Nokia1234." ]
-        #   then
-        #     echo "Got secret, Okay!!!"
-        #   fi
         env:
           CLIENT_ID: ${{ secrets.CLIENT_ID }}
           BLOB_STORAGE_KEY: ${{ secrets.BLOB_STORAGE_KEY }}
