@@ -21,10 +21,12 @@ imageSourceUrl = 'https://'+ app.config['BLOB_ACCOUNT']  + '.blob.core.windows.n
 def home():
     user = User.query.filter_by(username=current_user.username).first_or_404()
     posts = Post.query.all()
+    form = LoginForm()
     return render_template(
         'index.html',
         title='Home Page',
-        posts=posts
+        posts=posts,
+        person=user.username
     )
 
 @app.route('/new_post', methods=['GET', 'POST'])
@@ -58,6 +60,20 @@ def post(id):
         form=form
     )
 
+
+@app.route('/delete/<int:id>', methods=['GET', 'POST'])
+@login_required
+def delete(id):
+    post = Post.query.get(int(id))
+
+    post.delete_post(id)
+    flash('It was successfully deleted!')
+    return redirect(url_for('home'))
+    return render_template(
+        'index.html'
+    )
+
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     log = ""
@@ -79,7 +95,7 @@ def login():
             next_page = url_for('home')
         # NOTE: logging successful login attempts!
         log = "info"
-        app.logger.info('logging info issue: Login was successful!')
+        app.logger.info('logging info issue: Logging-in '+form.username.data+' was successful!')
         return redirect(next_page)
     session["state"] = str(uuid.uuid4())
     auth_url = _build_auth_url(scopes=Config.SCOPE, state=session["state"])
