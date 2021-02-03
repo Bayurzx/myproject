@@ -12,8 +12,10 @@ Or, once the MS Login button is implemented, it will automatically log into the 
 ## Project Instructions (For Student)
 
 `I was` expected to do the following to complete this project:
-1. Create a Resource Group in Azure. `Which I did`
-2. Create an SQL Database in Azure that contains a user table, an article table, and data in each table (populated with the scripts provided in the SQL Scripts folder). `Thanks I found the script helpful!`
+1. Create a Resource Group in Azure.
+## `Which I did`
+2. Create an SQL Database in Azure that contains a user table, an article table, and data in each table (populated with the scripts provided in the SQL Scripts folder).
+## `Thanks, I found the script helpful!`
     - Provide a screenshot of the populated tables as detailed further below.
 3. Create a Storage Container in Azure for `images` to be stored in a container.
     - Provide a screenshot of the storage endpoint URL as detailed further below.
