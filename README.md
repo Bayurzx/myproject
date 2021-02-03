@@ -35,23 +35,28 @@ Or, once the MS Login button is implemented, it will automatically log into the 
    ![image](https://raw.githubusercontent.com/Bayurzx/myproject/master/example_images/live-deploy%20screenshots/hello-world.jpg)
 
 8. Log into the Azure Portal, go to your Resource Group, and provide a screenshot including all of the resources that were created to complete this project. (see sample screenshot in "example_images" folder)
-9. Take a screenshot of the Redirect URIs entered for your registered app, related to the MS Login button.
-10. Take a screenshot of your logs (can be from the Log stream in Azure) showing logging from an attempt to sign in with an invalid login, as well as a valid login.
+  ![image](https://raw.githubusercontent.com/Bayurzx/myproject/master/example_images/Resource%20group1.jpg)
 
-## example_images Folder
+9. Take a screenshot of the Redirect URIs entered for your registered app, related to the MS Login button.
+![image](https://raw.githubusercontent.com/Bayurzx/myproject/master/example_images/live-deploy%20screenshots/app-registration-page-live.jpg)
+
+10. Take a screenshot of your logs (can be from the Log stream in Azure) showing logging from an attempt to sign in with an invalid login, as well as a valid login.
+![image](https://raw.githubusercontent.com/Bayurzx/myproject/master/example_images/live-deploy%20screenshots/log%20stream%20live.jpg)
+
+## example_images Folder ## => 👉 [example_images](https://github.com/Bayurzx/myproject/tree/master/example_images) 👈 Folder
 
 This folder contains sample screenshots that students are required to submit in order to prove they completed various tasks throughout the project.
 
-1. article-cms-solution.png is a screenshot from running the FlaskWebProject on Azure and prove that the student was able to create a new entry. The Title, Author, and Body fields must be populated to prove that the data is being retrieved from the Azure SQL Database while the image on the right proves that an image was uploaded and pulled from Azure Blob Storage.
-2. azure-portal-resource-group.png is a screenshot from the Azure Portal showing all of the contents of the Resource Group the student needs to create. The resource group must (at least) contain the following:
+1. `edit-post-live-app.jpg` is a screenshot from running the FlaskWebProject on Azure and prove that the student was able to create a new entry. The Title, Author, and Body fields must be populated to prove that the data is being retrieved from the Azure SQL Database while the image on the right proves that an image was uploaded and pulled from Azure Blob Storage.
+2. `Resource group1.jpg` is a screenshot from the Azure Portal showing all of the contents of the Resource Group the student needs to create. The resource group must (at least) contain the following:
 	- Storage Account
 	- SQL Server
 	- SQL Database
 	- Resources related to deploying the app
-3. sql-storage-solution.png is a screenshot showing the created tables and one query of data from the initial scripts.
-4. blob-solution.png is a screenshot showing an example of blob endpoints for where images are sent for storage.
-5. uri-redirects-solution.png is a screenshot of the redirect URIs related to Microsoft authentication.
-6. log-solution.png is a screenshot showing one potential form of logging with an "Invalid login attempt" and "admin logged in successfully", taken from the app's Log stream. You can customize your log messages as you see fit for these situations.
+3. `DB-Query.jpg` is a screenshot showing the created tables and one query of data from the initial scripts.
+4. `blob-storage account properties.jpg` is a screenshot showing an example of blob endpoints for where images are sent for storage.
+5. `App-registration-for-url-redirects.jpg` is a screenshot of the redirect URIs related to Microsoft authentication.
+6. `logging solution.jpg` is a screenshot showing one potential form of logging with an "Invalid login attempt" and "admin logged in successfully", taken from the app's Log stream. You can customize your log messages as you see fit for these situations.
 
 ## Dependencies
 
