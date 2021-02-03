@@ -36,6 +36,7 @@ class Post(db.Model):
     __tablename__ = 'posts'
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(150))
+    subtitle = db.Column(db.String(50))
     author = db.Column(db.String(75))
     body = db.Column(db.String(800))
     image_path = db.Column(db.String(100))
@@ -47,6 +48,7 @@ class Post(db.Model):
 
     def save_changes(self, form, file, userId, new=False):
         self.title = form.title.data
+        self.subtitle = form.subtitle.data
         self.author = form.author.data
         self.body = form.body.data
         self.user_id = userId
@@ -65,4 +67,15 @@ class Post(db.Model):
             self.image_path =  filename
         if new:
             db.session.add(self)
+        db.session.commit()
+
+    def delete_post(self, id):
+        self.id = id
+        try:
+            postQuery = Post.query.get_or_404(id)
+            db.session.delete(postQuery)
+
+        except Exception:
+            flash("Failed because: " + Exception)
+
         db.session.commit()
