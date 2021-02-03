@@ -1,7 +1,7 @@
 # Article CMS (FlaskWebProject)
 
 This project is a Python web application built using Flask. The user can log in and out and create/edit articles. An article consists of a title, author, and body of text stored in an Azure SQL Server along with an image that is stored in Azure Blob Storage. You will also implement OAuth2 with Sign in with Microsoft using the `msal` library, along with app logging.
-![image](https://raw.githubusercontent.com/Bayurzx/myproject/master/example_images/bonuses/Bonus.jpg)
+![image](https://raw.githubusercontent.com/Bayurzx/myproject/master/example_images/Stand_out_bonuses/Bonus.jpg)
 
 
 ## Log In Credentials for FlaskWebProject
@@ -18,7 +18,7 @@ Or, once the MS Login button is implemented, it will automatically log into the 
 ## `Which I did`
 2. Create an SQL Database in Azure that contains a user table, an article table, and data in each table (populated with the scripts provided in the SQL Scripts folder).
     - Provide a screenshot of the populated tables as detailed further below.
-    ![image](https://raw.githubusercontent.com/Bayurzx/myproject/master/example_images/bonuses/bonus1_1.jpg)
+    ![image](https://raw.githubusercontent.com/Bayurzx/myproject/master/example_images/Stand_out_bonuses/bonus1_1.jpg)
 3. Create a Storage Container in Azure for `images` to be stored in a container.
     - Provide a screenshot of the storage endpoint URL as detailed further below.
     ![image](https://raw.githubusercontent.com/Bayurzx/myproject/master/example_images/blob-storage%20account%20properties.jpg)
