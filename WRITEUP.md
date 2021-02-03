@@ -8,6 +8,11 @@
 - App service has more support for legacy apps
 - App Service is easier to scale in the long run in operations, cost, etc.
 
-live-link:
+## I avoided VM on Azure because,
+- VM requires more configuration is less easier to manage and not as fast to deploy as App Services
+- On VM there is less availability options, unless I plan on spending more money on availability zones
+- Need to schedule maintenance when there is a software / OS upgrade
+- Not easy scale in the long run in operations, cost, etc.
 
+## `here is my online-link:`
 http://cms-myproject-bayurzx.azurewebsites.net/

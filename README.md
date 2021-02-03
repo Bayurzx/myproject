@@ -15,10 +15,12 @@ Or, once the MS Login button is implemented, it will automatically log into the 
 1. Create a Resource Group in Azure.
 ## `Which I did`
 2. Create an SQL Database in Azure that contains a user table, an article table, and data in each table (populated with the scripts provided in the SQL Scripts folder).
-## `Thanks, I found the script helpful!`
     - Provide a screenshot of the populated tables as detailed further below.
+    ![image](https://raw.githubusercontent.com/Bayurzx/myproject/master/example_images/bonuses/bonus1_1.jpg)
 3. Create a Storage Container in Azure for `images` to be stored in a container.
     - Provide a screenshot of the storage endpoint URL as detailed further below.
+    ![image](https://raw.githubusercontent.com/Bayurzx/myproject/master/example_images/blob-storage%20account%20properties.jpg)
+
 4. Add functionality to the Sign In With Microsoft button.
     - This will require completing TODOs in `views.py` with the `msal` library, along with appropriate registration in Azure Active Directory.
 5. Choose to use either a VM or App Service to deploy the FlaskWebProject to Azure. Complete the analysis template in `WRITEUP.md` (or include in the README) to compare the two options, as well as detail your reasoning behind choosing one or the other. Once you have made your choice, go through with deployment.
@@ -30,6 +32,8 @@ Or, once the MS Login button is implemented, it will automatically log into the 
 	- Body: "My name is Jane Doe and this is my first article!"
 	- Upload an image of your choice. Must be either a .png or .jpg.
    After saving, click back on the article you created and provide a screenshot proving that it was created successfully. Please also make sure the URL is present in the screenshot.
+   ![image](https://raw.githubusercontent.com/Bayurzx/myproject/master/example_images/live-deploy%20screenshots/hello-world.jpg)
+
 8. Log into the Azure Portal, go to your Resource Group, and provide a screenshot including all of the resources that were created to complete this project. (see sample screenshot in "example_images" folder)
 9. Take a screenshot of the Redirect URIs entered for your registered app, related to the MS Login button.
 10. Take a screenshot of your logs (can be from the Log stream in Azure) showing logging from an attempt to sign in with an invalid login, as well as a valid login.
