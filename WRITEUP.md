@@ -32,7 +32,11 @@
 | Workload Cost and Elasticity | App Service is very elastic and cost effective given that it could easily spin up to 10 VM instances during peak periods of operations and remove VM instances after peak periods at a cost of `$0.10/hour` in a Standard run production environment. | VMs are rigid with respect to cost, elasticity, and job workloads(which is often hard to determine even with stress tests) required for application can easily change or fluctuate over time. This could make infrastructure decisions hard to make. |
 | Pricing Tiers | The minimum recommended pricing tier for App service `(Standard run production environment)` is at `$0.10/hour` which could easily spin up to 10 VM instances during peak periods | For VMs, the `Da v4-series VMs`(which is recommended Standard for production workloads) has a range of cost of  between `$0.096/hour` to `$4.608/hour` for a single VM instance. |
 
-
+If I had switched to VMs, I would have to;
+- Increase capital expenditure to protect my app to prevent failure by expanding availability zones,
+- Spend more time on Configurations especially with GitHub and MySQL deployments
+- Spend more on operation expenditure hardware management and updates
+- And in general, spend more money on everything😅.
 
 
 ## `here is my online-link:`
