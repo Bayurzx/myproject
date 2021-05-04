@@ -2,7 +2,7 @@
 
 ### Analyze, choose, and justify the appropriate resource option for deploying the app.
 
-## I chose App Services on Azure because,
+<!-- ## I chose App Services on Azure because,
 - App Service is less likely to fail and has more availability (availability zones)
 - App Service is easier to manage and faster to deploy
 - App service has more support for legacy apps
@@ -18,8 +18,9 @@
 ## *Update with respect to review*
 - VMs are rigid with respect to cost, and job workloads(which is often hard to determine even with stress tests) required for application can easily change or fluctuate over time. The mostly used General Purpose VMs range in just  `B1ls(4.38/month)` to `D8s_v3(350.48/month)` VM Sizes. This could make infrastructure decisions hard to make.
 - While comparing cost, the `Da v4-series VMs`(which is recommended Standard for production workloads) with an app service `Standard run production environment` pricing tier, I observed that the range of cost for VMs were between `$0.096/hour` to `$4.608/hour` for a production environment compared to a App Service Standard Run production workloads which was at a cost of `$0.10/hour`. The cost of VMs as compared, is quite exorbitant for continuously running workloads.
+ -->
 
-
+## *Update with respect to review*
 
 
 |   | I chose App Services on Azure because | I avoided VM on Azure because |
